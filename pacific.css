@@ -1,0 +1,94 @@
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
+body {
+	/* Makes the background a particular color. */
+	background-color: #00569f;
+
+	/* Creates a background color gradient that stops changing at 100vh. */
+	background-image: linear-gradient(white, #00569f 100vh);
+
+	/* color: #666666; */
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+div#wrapper {
+	/* Makes the content area wrapper resize with the viewport. */
+	width: 80%;
+
+	/* Establishes a minimum size for the wrapper. */
+	min-width: 600px;
+}
+
+div#content {
+
+}
+
+header {
+	background-image: url("sunset.jpg");
+	width: 100%;
+}
+
+nav {
+	/* Makes the background light blue. */
+	background-color: lightskyblue;
+
+	/* Makes the navbar a constant width. */
+	width: 200px;
+	
+	/* Makes height stretch its container. */
+	height: 100%;
+}
+
+ul {
+	/* Makes lists have custom bullet points. */
+	list-style-image: url("marker.gif");
+}
+
+nav ul {
+	font-size: 1.2em;
+
+	/* Removes the bullet-points. */
+	list-style: none;
+}
+
+nav a {
+	/* Removes the links' underlines. */
+	text-decoration-line: none;
+}
+
+nav a:visited {
+	color: #344873;
+}
+
+nav a:hover {
+	color: #FFFFFF;
+}
+
+h1 {
+	margin-bottom: 0;
+	padding: 10px;
+}
+
+h2 {
+	color: #3399CC;
+}
+
+h1, h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+#contact {
+	font-size: 90%;
+}
+
+dt {
+	color: #000033;
+}
+
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
