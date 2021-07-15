@@ -20,31 +20,60 @@ div#wrapper {
 
 	/* Establishes a minimum size for the wrapper. */
 	min-width: 600px;
+
+	text-align: center;
+
+	background-color: white;
 }
 
 div#content {
-
+	background-color: white;
+	text-align: left;
+	float: right;
+	margin: 0;
+	padding: 0;
+	width: calc(100% - 230px);
 }
 
 header {
+	/* Changes the title to white. */
+	color: white;
+
+	/* Changes the background color. */
+	background-color: rgb(2, 0, 54);
+
+	/* Sets the sunset image as the title background. */
 	background-image: url("sunset.jpg");
-	width: 100%;
-}
-
-nav {
-	/* Makes the background light blue. */
-	background-color: lightskyblue;
-
-	/* Makes the navbar a constant width. */
-	width: 200px;
 	
-	/* Makes height stretch its container. */
-	height: 100%;
+	/* Stops the background from repeating. */
+	background-repeat: no-repeat;
+
+	/* Pushes the image to the right so the rest is purplish. */
+	background-position-x: right;
+
+	/* Takes up the full width available. */
+	width: 100%;
 }
 
 ul {
 	/* Makes lists have custom bullet points. */
 	list-style-image: url("marker.gif");
+}
+
+nav {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	float: left;
+
+	/* Makes the background light blue. */
+	background-color: lightskyblue;
+
+	/* Makes the navbar a constant width. */
+	width: 200px;
+
+	/* Makes height stretch its container. */
+	height: 100vh;
 }
 
 nav ul {
@@ -89,6 +118,8 @@ dt {
 }
 
 footer {
+	clear: both;
+	vertical-align: bottom;
 	font-family: Georgia, "Times New Roman", serif;
 }
 
