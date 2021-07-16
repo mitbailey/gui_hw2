@@ -9,9 +9,14 @@ body {
 	/* Creates a background color gradient that stops changing at 100vh. */
 	background-image: linear-gradient(white, #00569f 100vh);
 
+    /* Not sure why this was here. */
 	/* color: #666666; */
+
+    /* Font family looks fine. */
 	font-family: Arial, Helvetica, sans-serif;
-	text-align: center;
+	
+    /* Eliminates strange white box at the bottom of the screen. */
+    min-height: 100vh;
 }
 
 div#wrapper {
@@ -21,18 +26,42 @@ div#wrapper {
 	/* Establishes a minimum size for the wrapper. */
 	min-width: 600px;
 
-	text-align: center;
+    /* Produces the illusion that the sidebar stretches the length of the #wrapper, when in fact it does not. */
+	background-color: lightskyblue;
 
-	background-color: white;
+    /* Allows the content to be centered. */
+    margin: auto;
+
+    /* Makes the wrapper fullsize. */
+    overflow: hidden;
+
+    /* Provides some space at the top of the screen. */
+    margin-top: 25px;
 }
 
 div#content {
+    /* Creates an illusion of the footer being part of the #content. */
 	background-color: white;
+
+    /* Left justify the text. */
 	text-align: left;
+
+    /* Allows the sidebar and content to exist adjacent. */
 	float: right;
-	margin: 0;
-	padding: 0;
-	width: calc(100% - 230px);
+
+    /* Keeps the sidebar from appearing to spill over. */
+	padding: 30px;
+
+    /* Keeps it resizable while also aligning properly w/ the footer and navbar. */
+	width: calc(100% - 260px);
+}
+
+#content img {
+    /* Lets the text wrap around while being left-justified. */
+    float: left;
+
+    /* Pushes the text away. */
+    margin-right: 20px;
 }
 
 header {
@@ -53,39 +82,50 @@ header {
 
 	/* Takes up the full width available. */
 	width: 100%;
+
+    /* Left justify the text. */
+    text-align: left;
 }
 
 ul {
 	/* Makes lists have custom bullet points. */
 	list-style-image: url("marker.gif");
+
+    /* Indents the list items. */
+    list-style-position: inside;
 }
 
 nav {
-	margin: 0;
-	padding: 0;
+    /* Justify the text left. */
 	text-align: left;
+
+    /* Makes the navbar to the left, otherwise itll try to go above #content. */
 	float: left;
 
 	/* Makes the background light blue. */
 	background-color: lightskyblue;
 
-	/* Makes the navbar a constant width. */
+	/* Makes the navbar a constant, correct, width. */
 	width: 200px;
-
-	/* Makes height stretch its container. */
-	height: 100vh;
 }
 
 nav ul {
+    /* Correct font size. */
 	font-size: 1.2em;
 
 	/* Removes the bullet-points. */
 	list-style: none;
+
+    /* Embolden. */
+    font-weight: bold;
 }
 
 nav a {
 	/* Removes the links' underlines. */
 	text-decoration-line: none;
+
+    /* Sets basic color of the links to a dark purple. */
+    color: #000033;
 }
 
 nav a:visited {
@@ -97,11 +137,18 @@ nav a:hover {
 }
 
 h1 {
+    /* Gets rid of blank space above title box. */
+    margin-top: 0;
+
+    /* Gets rid of blank space below title box. */
 	margin-bottom: 0;
-	padding: 10px;
+
+    /* Adds space between the title box and the title text. */
+	padding: 20px;
 }
 
 h2 {
+    /* Color of the content title. */
 	color: #3399CC;
 }
 
@@ -110,6 +157,7 @@ h1, h2 {
 }
 
 #contact {
+    /* Makes the text slightly smaller. */
 	font-size: 90%;
 }
 
@@ -118,8 +166,22 @@ dt {
 }
 
 footer {
-	clear: both;
-	vertical-align: bottom;
+    /* Provides the illusion of being part of #content. */
+	background-color: white;
+	text-align: left;
+	float: right;
+	/* margin: 0; */
+
+    /* Provides some space. */
+	padding: 20px;
+
+    /* Same as #content, but slightly moved to account for different padding (as seen in the example images). */
+	width: calc(100% - 240px);
+
 	font-family: Georgia, "Times New Roman", serif;
+
+    /* Font styling. */
+    font-style: italic;
+    font-size: small;
 }
 
