@@ -7,10 +7,11 @@ body {
 	background-color: #00569f;
 
 	/* Creates a background color gradient that stops changing at 100vh. */
+    /* Compliant with bullet-point #3. */
 	background-image: linear-gradient(white, #00569f 100vh);
 
-    /* Not sure why this was here. */
-	/* color: #666666; */
+    /* This color doesn't look quite right for the text, but it was here already. */
+	color: #666666;
 
     /* Font family looks fine. */
 	font-family: Arial, Helvetica, sans-serif;
@@ -19,11 +20,22 @@ body {
     min-height: 100vh;
 }
 
+.resort {
+    /* Sets the color for the Pacific Trails Resort name, which appears to be a greyish-blue. */
+    /* Compliant with bullet-point #5. */
+    color: #6e79aa;
+
+    /* Makes the Resort name bold. */
+    font-weight: bold;
+}
+
 div#wrapper {
 	/* Makes the content area wrapper resize with the viewport. */
+    /* Compliant with bullet-points #1 and #2. */
 	width: 80%;
 
 	/* Establishes a minimum size for the wrapper. */
+    /* Compliant with bullet-point #1. */
 	min-width: 600px;
 
     /* Produces the illusion that the sidebar stretches the length of the #wrapper, when in fact it does not. */
@@ -51,6 +63,9 @@ div#content {
 
     /* Keeps the sidebar from appearing to spill over. */
 	padding: 30px;
+
+    /* Makes the top have no padding as seen in the example images. */
+    padding-top: 0;
 
     /* Keeps it resizable while also aligning properly w/ the footer and navbar. */
 	width: calc(100% - 260px);
@@ -89,9 +104,11 @@ header {
 
 ul {
 	/* Makes lists have custom bullet points. */
+    /* Compliant with bullet-point #4. */
 	list-style-image: url("marker.gif");
 
     /* Indents the list items. */
+    /* Compliant with bullet-point #4. */
     list-style-position: inside;
 }
 
@@ -106,6 +123,7 @@ nav {
 	background-color: lightskyblue;
 
 	/* Makes the navbar a constant, correct, width. */
+    /* Compliant with bullet-point #2. */
 	width: 200px;
 }
 
@@ -114,6 +132,7 @@ nav ul {
 	font-size: 1.2em;
 
 	/* Removes the bullet-points. */
+    /* Compliant with bullet-point #6. */
 	list-style: none;
 
     /* Embolden. */
@@ -122,10 +141,11 @@ nav ul {
 
 nav a {
 	/* Removes the links' underlines. */
+    /* Compliant with bullet-point #6. */
 	text-decoration-line: none;
 
     /* Sets basic color of the links to a dark purple. */
-    color: #000033;
+    color: #00003e;
 }
 
 nav a:visited {
